@@ -10,10 +10,12 @@
 	org.apache.felix.gogo.shell;version='[1.0.0,1.0.1)',\
 	org.apache.felix.scr;version='[2.0.14,2.0.15)',\
 	org.store.api;version=snapshot,\
-	org.store.impls.provider;version=snapshot
+	org.store.impls.provider;version=snapshot,\
+	org.store.impls.command;version=snapshot
 
 -runrequires: \
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)',\
-	bnd.identity;version='latest';id='org.store.impls.provider'
+	bnd.identity;version='latest';id='org.store.impls.provider',\
+	bnd.identity;version='latest';id='org.store.impls.command'
 -resolve: auto

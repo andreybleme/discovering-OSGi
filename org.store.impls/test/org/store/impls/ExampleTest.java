@@ -8,7 +8,7 @@ public class ExampleTest {
 
 	@Test
 	public void testGetBilling() {
-		String message = new Example().getBilling("andreybleme");
+		String message = new Example().bill("andreybleme");
 		assertEquals(message, "andreybleme, your billing account is USD 50,00");
 	}
 

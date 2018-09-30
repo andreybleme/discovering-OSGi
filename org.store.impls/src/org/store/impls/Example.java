@@ -7,7 +7,7 @@ import org.store.api.Billing;
 public class Example implements Billing {
 
 	@Override
-	public String getBilling(String username) {
+	public String bill(String username) {
 		String message = username + ", your billing account is USD 50,00";
 		return message;
 	}
